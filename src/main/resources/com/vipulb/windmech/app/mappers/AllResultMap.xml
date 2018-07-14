@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="AllResultMap">
+	
+	<resultMap type="com.vipulb.windmech.app.beans.TraceUser" id="TraceUserResult">
+		<result column="user_id" property="userId"/>
+		<result column="user_name" property="username"/>
+		<result column="client_id" property="clientId"/>
+		<result column="vendor_id" property="vendorId"/>
+		<result column="email" property="email"/>
+		<result column="password" property="password"/>
+		<result column="active_flg" property="activeFlag"/>
+	</resultMap>
+</mapper>

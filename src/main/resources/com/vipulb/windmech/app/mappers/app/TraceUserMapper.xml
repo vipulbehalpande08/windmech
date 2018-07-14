@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.vipulb.windmech.app.dao.TraceUserDao">
+	
+	<select id="getLoginDetails" resultMap="AllResultMap.TraceUserResult">
+		select 
+			user_id,
+		    user_name,
+		    client_id,
+		    vendor_id, 
+		    email, 
+		    password, 
+		    active_flg 
+		from trace_user
+		where user_name = #{username}
+	</select>
+</mapper>
